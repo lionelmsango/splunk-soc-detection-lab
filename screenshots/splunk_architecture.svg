@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620">
+  <defs>
+    <style>
+      .box-primary { fill: #0078d4; stroke: #004578; stroke-width: 2; }
+      .box-red { fill: #d93025; stroke: #a50e0e; stroke-width: 2; }
+      .box-secondary { fill: #50e6ff; stroke: #0078d4; stroke-width: 2; }
+      .box-tertiary { fill: #e3f2fd; stroke: #0078d4; stroke-width: 1.5; }
+      .box-orange { fill: #fff4e5; stroke: #e67e00; stroke-width: 1.5; }
+      .box-green { fill: #e8f5e9; stroke: #2e7d32; stroke-width: 1.5; }
+      .text-white { fill: white; font-family: 'Segoe UI', Arial, sans-serif; font-size: 16px; font-weight: 600; }
+      .text-white-sm { fill: white; font-family: 'Segoe UI', Arial, sans-serif; font-size: 12px; }
+      .text-dark { fill: #000; font-family: 'Segoe UI', Arial, sans-serif; font-size: 14px; font-weight: 600; }
+      .text-small { fill: #333; font-family: 'Segoe UI', Arial, sans-serif; font-size: 12px; }
+      .text-red { fill: #d93025; font-family: 'Segoe UI', Arial, sans-serif; font-size: 11px; font-weight: 600; }
+      .text-green { fill: #2e7d32; font-family: 'Segoe UI', Arial, sans-serif; font-size: 11px; font-weight: 600; }
+      .connector { stroke: #555; stroke-width: 2; fill: none; }
+      .connector-dashed { stroke: #e67e00; stroke-width: 2; fill: none; stroke-dasharray: 6,3; }
+      .connector-blue { stroke: #0078d4; stroke-width: 2; fill: none; }
+      .label-box { fill: #fff; stroke: #e67e00; stroke-width: 1; }
+    </style>
+  </defs>
+
+  <!-- HOST MACHINE -->
+  <rect class="box-primary" x="20" y="20" width="860" height="580" rx="10"/>
+  <text class="text-white" x="450" y="48" text-anchor="middle">HOST MACHINE</text>
+  <text class="text-white-sm" x="450" y="65" text-anchor="middle">VMware Workstation</text>
+
+  <!-- LEFT VM: SPLUNK SERVER -->
+  <rect class="box-secondary" x="50" y="90" width="370" height="480" rx="8"/>
+  <text class="text-dark" x="235" y="118" text-anchor="middle">Splunk Server VM</text>
+  <text class="text-small" x="235" y="135" text-anchor="middle">Ubuntu Server 24.04 LTS</text>
+  <text class="text-small" x="235" y="150" text-anchor="middle">IP: 192.168.10.30</text>
+
+  <!-- Splunk Engine -->
+  <rect class="box-tertiary" x="70" y="165" width="330" height="65" rx="5"/>
+  <text class="text-dark" x="235" y="190" text-anchor="middle">Splunk Enterprise 10.4</text>
+  <text class="text-small" x="235" y="208" text-anchor="middle">Free license: 500 MB/day</text>
+  <text class="text-small" x="235" y="222" text-anchor="middle">Receives on port 9997</text>
+
+  <!-- Indexes -->
+  <rect class="box-tertiary" x="70" y="245" width="155" height="75" rx="5"/>
+  <text class="text-dark" x="147" y="268" text-anchor="middle">Indexes</text>
+  <text class="text-small" x="147" y="286" text-anchor="middle">sysmon</text>
+  <text class="text-small" x="147" y="302" text-anchor="middle">wineventlog</text>
+
+  <!-- Apps -->
+  <rect class="box-tertiary" x="240" y="245" width="160" height="75" rx="5"/>
+  <text class="text-dark" x="320" y="268" text-anchor="middle">Apps Installed</text>
+  <text class="text-small" x="320" y="286" text-anchor="middle">Sysmon Add-on</text>
+  <text class="text-small" x="320" y="302" text-anchor="middle">Security Essentials</text>
+
+  <!-- Analyst Outputs -->
+  <rect class="box-green" x="70" y="335" width="330" height="215" rx="5"/>
+  <text class="text-green" x="235" y="358" text-anchor="middle">Analyst Workflow</text>
+
+  <rect class="box-tertiary" x="85" y="368" width="145" height="55" rx="4"/>
+  <text class="text-dark" x="157" y="388" text-anchor="middle">Detection</text>
+  <text class="text-small" x="157" y="405" text-anchor="middle">4 SPL queries</text>
+  <text class="text-small" x="157" y="420" text-anchor="middle">1 saved alert</text>
+
+  <rect class="box-tertiary" x="245" y="368" width="140" height="55" rx="4"/>
+  <text class="text-dark" x="315" y="388" text-anchor="middle">Dashboard</text>
+  <text class="text-small" x="315" y="405" text-anchor="middle">Event timeline</text>
+  <text class="text-small" x="315" y="420" text-anchor="middle">MITRE panels</text>
+
+  <rect class="box-tertiary" x="85" y="435" width="300" height="100" rx="4"/>
+  <text class="text-dark" x="235" y="458" text-anchor="middle">Threat Hunting</text>
+  <text class="text-small" x="235" y="476" text-anchor="middle">LOLBin usage by parent process</text>
+  <text class="text-small" x="235" y="493" text-anchor="middle">Rare process relationships</text>
+  <text class="text-small" x="235" y="510" text-anchor="middle">Encoded PowerShell detection</text>
+  <text class="text-small" x="235" y="527" text-anchor="middle">MITRE ATT&amp;CK coverage map</text>
+
+  <!-- RIGHT VM: WINDOWS ENDPOINT -->
+  <rect class="box-secondary" x="480" y="90" width="380" height="480" rx="8"/>
+  <text class="text-dark" x="670" y="118" text-anchor="middle">Windows Endpoint VM</text>
+  <text class="text-small" x="670" y="135" text-anchor="middle">Windows 11 Pro 25H2</text>
+  <text class="text-small" x="670" y="150" text-anchor="middle">IP: 192.168.10.134</text>
+
+  <!-- Sysmon -->
+  <rect class="box-tertiary" x="500" y="165" width="340" height="75" rx="5"/>
+  <text class="text-dark" x="670" y="188" text-anchor="middle">Sysmon (SwiftOnSecurity config)</text>
+  <text class="text-small" x="670" y="207" text-anchor="middle">Logs: process create, network, file,</text>
+  <text class="text-small" x="670" y="222" text-anchor="middle">registry, DNS (Event IDs 1,3,11,12,13)</text>
+
+  <!-- Universal Forwarder -->
+  <rect class="box-tertiary" x="500" y="255" width="340" height="55" rx="5"/>
+  <text class="text-dark" x="670" y="278" text-anchor="middle">Splunk Universal Forwarder</text>
+  <text class="text-small" x="670" y="295" text-anchor="middle">Ships Sysmon + Windows Security logs to 9997</text>
+
+  <!-- Windows Event Logs -->
+  <rect class="box-tertiary" x="500" y="325" width="155" height="75" rx="5"/>
+  <text class="text-dark" x="577" y="348" text-anchor="middle">Windows Logs</text>
+  <text class="text-small" x="577" y="366" text-anchor="middle">Security (4624/4720)</text>
+  <text class="text-small" x="577" y="382" text-anchor="middle">System / Application</text>
+
+  <!-- Attack Simulation -->
+  <rect class="box-orange" x="670" y="325" width="170" height="75" rx="5"/>
+  <text class="text-dark" x="755" y="348" text-anchor="middle">Atomic Red Team</text>
+  <text class="text-small" x="755" y="366" text-anchor="middle">Invoke-AtomicRedTeam</text>
+  <text class="text-small" x="755" y="382" text-anchor="middle">4 MITRE techniques</text>
+
+  <!-- MITRE Techniques Box -->
+  <rect class="box-orange" x="500" y="415" width="340" height="140" rx="5"/>
+  <text class="text-red" x="670" y="438" text-anchor="middle">MITRE ATT&amp;CK Techniques Simulated</text>
+  <text class="text-small" x="670" y="458" text-anchor="middle">T1059.001 — PowerShell (Mimikatz download cradle)</text>
+  <text class="text-small" x="670" y="476" text-anchor="middle">T1136.001 — Create Local Account</text>
+  <text class="text-small" x="670" y="494" text-anchor="middle">T1547.001 — Registry Run Key Persistence</text>
+  <text class="text-small" x="670" y="512" text-anchor="middle">T1053.005 — Scheduled Task Creation</text>
+  <text class="text-small" x="670" y="530" text-anchor="middle">Tactics: Execution, Persistence, Credential Access</text>
+
+  <!-- ARROW: Windows to Splunk (log forwarding) -->
+  <line class="connector-blue" x1="480" y1="283" x2="400" y2="283"/>
+  <polygon fill="#0078d4" points="400,277 388,283 400,289"/>
+  <rect class="label-box" x="410" y="268" width="60" height="18" rx="3"/>
+  <text font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#0078d4" x="440" y="281" text-anchor="middle">port 9997</text>
+
+  <!-- ARROW: Atomic Red Team triggers Sysmon -->
+  <line class="connector-dashed" x1="755" y1="325" x2="755" y2="240"/>
+  <polygon fill="#e67e00" points="749,240 755,228 761,240"/>
+
+  <!-- Footer -->
+  <text font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="rgba(255,255,255,0.7)" x="450" y="595" text-anchor="middle">All VMs share a bridged VMware network segment. Sysmon pre-onboarding: SDDL fix via wevtutil required for Splunk channel access.</text>
+
+</svg>
