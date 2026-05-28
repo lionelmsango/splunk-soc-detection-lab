@@ -1,6 +1,6 @@
 # Splunk SIEM — SOC Detection Lab
 
-**Deutsche Kurzbeschreibung:** Aufbau eines Security Operations Center in einer Lab-Umgebung mit Splunk Enterprise als SIEM. Angriffssimulation mit Atomic Red Team über vier MITRE ATT&CK-Techniken, Erkennung mit gezielten SPL-Abfragen, Threat Hunting und SOC-Dashboard-Entwicklung. Dokumentiert den vollständigen SOC-Analyst-Workflow: von der Angriffssimulation bis zur Alert-Konfiguration und proaktiven Bedrohungssuche.
+**Kurzbeschreibung:** Aufbau eines Security Operations Center in einer Lab-Umgebung mit Splunk Enterprise als SIEM. Angriffssimulation mit Atomic Red Team über vier MITRE ATT&CK-Techniken, Erkennung mit gezielten SPL-Abfragen, Threat Hunting und SOC-Dashboard-Entwicklung. Dokumentiert den vollständigen SOC-Analyst-Workflow: von der Angriffssimulation bis zur Alert-Konfiguration und proaktiven Bedrohungssuche.
 
 ---
 
