@@ -16,4 +16,4 @@ The focus is the analyst work, not the infrastructure. The lab setup is mentione
 
 ## Architecture
 
-![Lab Architecture](splunk_architecture.svg)
+![Lab Architecture](https://github.com/lionelmsango/splunk-soc-detection-lab/blob/c04187599485c52ce7c6438971e5fc7fadd42d37/screenshots/splunk_architecture.svg)
