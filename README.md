@@ -8,7 +8,7 @@
 
 This is a full SOC detection workflow built from scratch. Splunk Enterprise on Ubuntu ingesting Sysmon logs from a Windows 11 endpoint, attack simulation with Atomic Red Team mapped to MITRE ATT&CK, SPL detection queries for each technique, a live alert, a custom dashboard, and three threat hunting scenarios.
 
-The focus is the analyst work, not the infrastructure. The lab setup is mentioned briefly below, but every screenshot in this README comes from the attack simulation and investigation side.
+The focus is the analyst work, not the infrastructure. The lab overall lab setup is mentioned briefly  in the architechture diagram below, but every screenshot in this README comes from the attack simulation and investigation side.
 
 ---
 
