@@ -11,3 +11,9 @@ This is a full SOC detection workflow built from scratch. Splunk Enterprise on U
 The focus is the analyst work, not the infrastructure. The lab setup is mentioned briefly below, but every screenshot in this README comes from the attack simulation and investigation side.
 
 ---
+
+---
+
+## Architecture
+
+![Lab Architecture](splunk_architecture.svg)
